@@ -1,6 +1,12 @@
 <?php
+//Necessita do banco de dados.
 require_once(LIB_PATH.DS.'database.php');
 
+/**
+ * @author paulimfavarato
+ * @version 0.1
+ * @access public
+ */
 class Choice extends DatabaseObject {
 
 	protected static $table_name="choices";
@@ -11,11 +17,22 @@ class Choice extends DatabaseObject {
 	public $correct;
 	public $sequence;
 
+	/**
+	 * Função que verifica se o objeto (alternativa) é correta
+	 * @access public
+	 * @return boolean
+	 */
 	public function is_correct() {
 		return $this->correct;
 	}
 
-	public static function builder($title, $correct, $sequence="") {
+	/**
+	 * Função estática para criar novas alternativas (choice)
+	 * @param String $title - Alternativa em si (titulo) 
+	 * @param boolean $correct - Se a alternativa está correta
+	 * @param int $sequence - Ordem de sequencia da alternativa na questão.
+	 */
+	public static function builder($title, $correct, $sequence) {
 		$choice = new self;
 		$choice->title = $title;
 		$choice->correct = $correct;
