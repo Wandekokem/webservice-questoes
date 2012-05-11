@@ -6,7 +6,7 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
 
 <?php include_layout_template('header.php'); ?>
 
-	<h2>OpÃ§Ãµes</h2>
+	<h2>Opções</h2>
 		
 
 <?php include_layout_template('footer.php'); ?>
