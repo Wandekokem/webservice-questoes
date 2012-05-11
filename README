@@ -1,0 +1,3 @@
+WebService para o aplicativo "Questoes" no Android
+Base de dados realizada em PHP + MySQL
+Para melhor funcionamento do WebService é recomendada instalação do PHP 5.3 ou posterior onde está adicionada a função de "late static bindings" http://php.net/manual/pt_BR/language.oop5.late-static-bindings.php
