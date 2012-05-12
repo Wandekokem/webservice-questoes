@@ -5,23 +5,23 @@ if($session->is_logged_in()) {
 }
 
 $message = "";
-// Remember to give your form's submit tag a name="submit" attribute!
-if (isset($_POST['submit'])) { // Form has been submitted.
+if (isset($_POST['submit'])) { // O formuário foi submetido
 
 	$username = trim($_POST['username']);
 	$password = trim($_POST['password']);
   
-  // Check database to see if username/password exist.
+  // Checa o banco de dados para ver se o username/password existe.
 	$found_user = User::authenticate($username, $password);
 	
 	if ($found_user) {
 		$session->login($found_user);
+		//redireciona para a página principal se o login for feito.
 		redirect_to("index.php");
 	} else {
-		// username/password combo was not found in the database
-		$message = "Username/password combination incorrect.";
+		// a combinação username/password não foi encontrada no banco de dados
+		$message = "Username/password incorretos.";
 	}
-} else { // Form has not been submitted.
+} else { // O formulário não foi submetido.
   $username = "";
   $password = "";
 }
@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
 		<form action="login.php" method="post">
 		  <table>
 		    <tr>
-		      <td>UsuÃ¡rio:</td>
+		      <td>Usuário:</td>
 		      <td>
 		        <input type="text" name="username" maxlength="30" value="<?php echo htmlentities($username); ?>" />
 		      </td>
