@@ -1,6 +1,6 @@
 <?php
-$label['site_title'] = "Quest�es.net";
-$label['title'] = "Pagina do Administrador";
+$label['site_title'] = "Questões.net";
+$label['title'] = "Página do Administrador";
 $label['login'] = "Login do Administrador";
 
 ?>

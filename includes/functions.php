@@ -3,7 +3,7 @@
 function strip_zeros_from_date( $marked_string="") {
 	// remove os zeros marcados
 	$no_zeros = str_replace("*0", '', $marked_string);
-	// então remove as marcações que sobram
+	// entï¿½o remove as marcaÃ§Ãµes que sobram
 	$cleaned_string = str_replace('*','', $no_zeros);
 	return $cleaned_string;
 }
@@ -29,7 +29,7 @@ function __autoload($class_name) {
 	if (file_exists($path)) {
 		require_once($path);
 	} else {
-		die("A arquivo {$class_name}.php não pode ser encontrado.");
+		die("A arquivo {$class_name}.php nï¿½o pode ser encontrado.");
 	}
 }
 

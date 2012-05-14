@@ -6,6 +6,6 @@
   </head>
   <body>
     <div id="header">
-      <h1>Questões.net</h1>
+      <h1>QuestÃµes.net</h1>
     </div>
     <div id="main">

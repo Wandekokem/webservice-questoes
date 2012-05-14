@@ -18,7 +18,7 @@ class Choice extends DatabaseObject {
 	public $sequence;
 
 	/**
-	 * Função que verifica se o objeto (alternativa) é correta
+	 * Funï¿½ï¿½o que verifica se o objeto (alternativa) Ã© correta
 	 * @access public
 	 * @return boolean
 	 */
@@ -27,10 +27,10 @@ class Choice extends DatabaseObject {
 	}
 
 	/**
-	 * Função estática para criar novas alternativas (choice)
+	 * Funï¿½ï¿½o estï¿½tica para criar novas alternativas (choice)
 	 * @param String $title - Alternativa em si (titulo) 
-	 * @param boolean $correct - Se a alternativa está correta
-	 * @param int $sequence - Ordem de sequencia da alternativa na questão.
+	 * @param boolean $correct - Se a alternativa estÃ¡ correta
+	 * @param int $sequence - Ordem de sequencia da alternativa na questï¿½o.
 	 */
 	public static function builder($title, $correct, $sequence) {
 		$choice = new self;

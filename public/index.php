@@ -6,7 +6,7 @@ require_once('../includes/initialize.php');
 
 	<h2>Bem vindo</h2>
 	
-	Esta é a área publica.
+	Esta Ã© a Ã¡rea publica.
 		
 
 <?php include_layout_template('footer.php'); ?>

@@ -84,6 +84,7 @@ class Question extends DatabaseObject {
 				$choice->correct = ($choice->correct) ? 1 : 0;
 				$choice->create();
 			}
+			return true;
 		} else {
 			return false;
 		}

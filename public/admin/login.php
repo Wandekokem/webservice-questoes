@@ -5,7 +5,7 @@ if($session->is_logged_in()) {
 }
 
 $message = "";
-if (isset($_POST['submit'])) { // O formuário foi submetido
+if (isset($_POST['submit'])) { // O formuï¿½rio foi submetido
 
 	$username = trim($_POST['username']);
 	$password = trim($_POST['password']);
@@ -15,13 +15,13 @@ if (isset($_POST['submit'])) { // O formuário foi submetido
 	
 	if ($found_user) {
 		$session->login($found_user);
-		//redireciona para a página principal se o login for feito.
+		//redireciona para a pï¿½gina principal se o login for feito.
 		redirect_to("index.php");
 	} else {
-		// a combinação username/password não foi encontrada no banco de dados
+		// a combinaÃ§Ã£oo username/password nï¿½o foi encontrada no banco de dados
 		$message = "Username/password incorretos.";
 	}
-} else { // O formulário não foi submetido.
+} else { // O formulï¿½rio nï¿½o foi submetido.
   $username = "";
   $password = "";
 }
@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) { // O formuário foi submetido
 		<form action="login.php" method="post">
 		  <table>
 		    <tr>
-		      <td>Usuário:</td>
+		      <td>UsuÃ¡rio:</td>
 		      <td>
 		        <input type="text" name="username" maxlength="30" value="<?php echo htmlentities($username); ?>" />
 		      </td>
