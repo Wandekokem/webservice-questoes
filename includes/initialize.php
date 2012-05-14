@@ -6,7 +6,7 @@
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 
 //SITE_ROOT é C:\sites\questoes\ - Raiz do projeto
-defined('SITE_ROOT') ? null : define ('SITE_ROOT','C:'.DS.'sites'.DS.'questoes');
+defined('SITE_ROOT') ? null : define ('SITE_ROOT','C:'.DS.'sites'.DS.'webservice-questoes');
 //LIB_PATH é C:\sites\questoes\includes\ - Livraria
 defined('LIB_PATH') ? null : define ('LIB_PATH',SITE_ROOT.DS.'includes');
 
